@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{BB36BF2A-40B5-4326-9AA3-97AF8B4EB99D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ValuesController.cs">
+    <Files>
+      <File FileName="Models/EmployeeModel.cs" Line="13" Column="1" />
+      <File FileName="Controllers/LoginController.cs" Line="6" Column="32" />
+      <File FileName="Views/Employee/Employee.cshtml" Line="8" Column="1" />
+      <File FileName="Controllers/APIController.cs" Line="12" Column="6" />
+      <File FileName="Controllers/EmployeeController.cs" Line="18" Column="14" />
+      <File FileName="Controllers/NewHttpClientInstancePerRequestController.cs" Line="36" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="6" Column="32" />
+      <File FileName="Controllers/ValuesController.cs" Line="14" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.canopyws PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
