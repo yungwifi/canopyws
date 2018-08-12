@@ -12268,6 +12268,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
+      "Microsoft.Extensions.Configuration.CommandLine >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "React.AspNet >= 3.4.0"
     ]
@@ -12325,6 +12326,10 @@
           "React.AspNet": {
             "target": "Package",
             "version": "3.4.0"
+          },
+          "Microsoft.Extensions.Configuration.CommandLine": {
+            "target": "Package",
+            "version": "2.1.1"
           }
         },
         "imports": [
