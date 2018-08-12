@@ -3,7 +3,8 @@ namespace canopyws.Models
 {
     public class Employee
     {
-            public string firstName { get; set; }
-            public string lastName { get; set; }
+        public string employeeUserId { get; set; }
+        public string personalFirstName { get; set; }
+        public string personalLastName{get ; set;}
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using canopyws.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,13 +14,14 @@ namespace canopyws.Controllers
     {
         // GET: api/employees
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Index()
         {
-            return new string[]  {
-                                        "employeeUserId",
-                                        "personalFirstName",
-                                        "personalLastName"
-                                 };
+            var employeeOne = new Employee(){
+                employeeUserId = "100",
+                personalFirstName = "Spencer",
+                personalLastName = "Merryman" };
+            
+            return View(employeeOne);
         }
 
         // GET api/values/5

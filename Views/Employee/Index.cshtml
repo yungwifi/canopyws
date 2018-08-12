@@ -1,14 +1,14 @@
-﻿@{
+﻿@model canopyws.Models.Employee
+@{
     ViewData["Title"] = "Employees";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 <p>Your Employees</p>
 <ul>
-    <li><a href="/employee/employee">Employee Number 1</a></li>
-    <li><a href="/employee/employee">Employee Number 2</a></li>
-    <li><a href="/employee/employee">Employee Number 3</a></li>
-    <li><a href="/employee/employee">Employee Number 4</a></li>
+    <li>@Model.personalFirstName</li>
+    <li>@Model.personalLastName</li>
+    <li>@Model.employeeUserId</li>
 </ul>
 
 
