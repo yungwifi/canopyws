@@ -6,10 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="React.AspNet" Version="3.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Login\" />
     <Folder Include="Views\Employee\" />
   </ItemGroup>
   <ItemGroup>
@@ -18,14 +18,35 @@
     <Compile Remove="Controllers\APIController.cs" />
     <Compile Remove="Controllers\NewHttpClientInstancePerRequestController.cs" />
     <Compile Remove="Models\EmployeeModel.cs" />
+    <Compile Remove="Views\Test\Index.cshtml" />
+    <Compile Remove="Controllers\LoginController.cs" />
+    <Compile Remove="Controllers\CompanyController.cs" />
+    <Compile Remove="Controllers\TestController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Login\Index.cshtml" />
     <Content Remove="Views\Employee\Index.cshtml" />
     <Content Remove="Views\Employee\Employee.cshtml" />
+    <Content Remove="client\package-lock.json" />
+    <Content Remove="client\package.json" />
+    <Content Remove="client\public\manifest.json" />
+    <Content Remove="wwwroot\js\tutorial.jsx" />
+    <Content Remove="Views\Test\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\Login\Index.cshtml" />
+    <None Remove="client\.gitignore" />
+    <None Remove="client\README.md" />
+    <None Remove="client\public\favicon.ico" />
+    <None Remove="client\public\index.html" />
+    <None Remove="client\src\App.css" />
+    <None Remove="client\src\App.js" />
+    <None Remove="client\src\App.test.js" />
+    <None Remove="client\src\index.css" />
+    <None Remove="client\src\index.js" />
+    <None Remove="client\src\logo.svg" />
+    <None Remove="client\src\registerServiceWorker.js" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Views\Employee\Index.cshtml" />
     <None Include="Views\Employee\Employee.cshtml" />
   </ItemGroup>

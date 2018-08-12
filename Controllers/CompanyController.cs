@@ -9,22 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace canopyws.Controllers
 {
     [Route("api/v1/company/{companyId}/exports")]
-    public class EmployeeController : Controller
+    public class CompanyController : Controller
     {
-        // GET: api/employees
+        // GET: api/values
         [HttpGet]
         public IEnumerable<string> Get()
-        {
-            return new string[]  {
-                                        "employeeUserId",
-                                        "personalFirstName",
-                                        "personalLastName"
-                                 };
-        }
-
-        // GET api/values/5
-        [HttpGet("employee-number/{employee-number}")]
-        public IEnumerable<string> Get(string employeeUserId)
         {
             return new string[]  {
                                         "employeeUserId",
@@ -142,8 +131,8 @@ namespace canopyws.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("ssn/{ssn}")]
-        public IEnumerable<string> Get(int ssn)
+        [HttpGet("/ssn/{ssn}")]
+        public IEnumerable<string> Get(string ssn)
         {
             return new string[]  {
                                         "employeeUserId",
