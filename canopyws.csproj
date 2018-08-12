@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Views\Employee\" />
+    <Folder Include="Views\PayFrequencies\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\Login\Index.cs" />
@@ -33,6 +34,7 @@
     <Content Remove="client\public\manifest.json" />
     <Content Remove="wwwroot\js\tutorial.jsx" />
     <Content Remove="Views\Test\Index.cshtml" />
+    <Content Remove="Views\PayFrequency\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="client\.gitignore" />
@@ -50,5 +52,6 @@
   <ItemGroup>
     <None Include="Views\Employee\Index.cshtml" />
     <None Include="Views\Employee\Employee.cshtml" />
+    <None Include="Views\PayFrequencies\Index.cshtml" />
   </ItemGroup>
 </Project>

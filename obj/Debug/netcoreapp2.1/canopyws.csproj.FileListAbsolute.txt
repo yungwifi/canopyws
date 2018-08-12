@@ -30,3 +30,4 @@
 /Users/spencermerryman/canopyws/obj/Debug/netcoreapp2.1/canopyws.dll
 /Users/spencermerryman/canopyws/obj/Debug/netcoreapp2.1/canopyws.pdb
 /Users/spencermerryman/canopyws/obj/Debug/netcoreapp2.1/canopyws.csproj.CopyComplete
+/Users/spencermerryman/canopyws/obj/Debug/netcoreapp2.1/Razor/Views/PayFrequencies/Index.g.cshtml.cs

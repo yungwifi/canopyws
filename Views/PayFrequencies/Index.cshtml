@@ -1,0 +1,16 @@
+﻿@model canopyws.Models.PayFrequencyModel
+@{
+    ViewData["Title"] = "Pay Frequencies";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+<p>Your Pay Frequencies</p>
+<ul>
+    <li>@Model.Id</li>
+    <li>@Model.Name</li>
+    <li>@Model.Description</li>
+    <li>@Model.GlCode</li>
+    <li>@Model.StandardHours</li>
+    <li>@Model.PayFrequencyFactor</li>
+    <li>@Model.LagValue</li>
+</ul>

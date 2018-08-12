@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using canopyws.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,18 +14,18 @@ namespace canopyws.Controllers
     {
         // GET: All api/pay-frequencies
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Index()
         {
-            return new string[] {
-                                   "Id",
-                                   "Name",
-                                   "Description",
-                                   "GlCode",
-                                   "StandardHours",
-                                   "PayFrequencyFactor",
-                                   "LagValue"
-                                  };
+            var payFreq = new PayFrequencyModel() {
+                Id= 334916,
+                Name= "10",
+                Description = "10 Month",
+                GlCode = "",
+                StandardHours = 80,
+                PayFrequencyFactor = 1950,
+                LagValue = "0" };
 
+            return View(payFreq);
         }
 
         // GET One api/pay-frequencies
