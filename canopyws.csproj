@@ -17,6 +17,7 @@
     <Compile Remove="Views\Login\Index.cshtml" />
     <Compile Remove="Controllers\APIController.cs" />
     <Compile Remove="Controllers\NewHttpClientInstancePerRequestController.cs" />
+    <Compile Remove="Models\EmployeeModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Login\Index.cshtml" />

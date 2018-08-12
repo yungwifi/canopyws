@@ -8,10 +8,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace canopyws.Controllers
 {
-    [Route("api/values")]
-    public class ValuesController : Controller
+    [Route("api/pay-frequencies")]
+    public class PayFrequenciesController : Controller
     {
-        // GET: api/values
+        // GET: All api/pay-frequencies
         [HttpGet]
         public IEnumerable<string> Get()
         {
@@ -27,11 +27,19 @@ namespace canopyws.Controllers
 
         }
 
-        // GET api/values/5
+        // GET One api/pay-frequencies
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IEnumerable<string> Get(int id)
         {
-            return "value";
+            return new string[] {
+                                   "Id",
+                                   "Name",
+                                   "Description",
+                                   "GlCode",
+                                   "StandardHours",
+                                   "PayFrequencyFactor",
+                                   "LagValue"
+                                  };
         }
 
     }
