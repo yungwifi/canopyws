@@ -16,7 +16,7 @@ namespace canopyws.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var employeeOne = new Employee(){
+            var employeeOne = new EmployeeModel(){
                 employeeUserId = "100",
                 personalFirstName = "Spencer",
                 personalLastName = "Merryman" };

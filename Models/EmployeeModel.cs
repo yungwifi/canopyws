@@ -1,7 +1,7 @@
 ﻿using System;
 namespace canopyws.Models
 {
-    public class Employee
+    public class EmployeeModel
     {
         public string employeeUserId { get; set; }
         public string personalFirstName { get; set; }
