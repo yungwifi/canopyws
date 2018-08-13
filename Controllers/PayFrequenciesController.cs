@@ -30,17 +30,20 @@ namespace canopyws.Controllers
 
         // GET One api/pay-frequencies
         [HttpGet("{frequenciesId}")]
-        public IEnumerable<string> Get(string frequenciesId)
+        public IActionResult Show()
         {
-            return new string[] {
-                                   "Id",
-                                   "Name",
-                                   "Description",
-                                   "GlCode",
-                                   "StandardHours",
-                                   "PayFrequencyFactor",
-                                   "LagValue"
-                                  };
+            var payFreq = new PayFrequencyModel()
+            {
+                Id = 334916,
+                Name = "10",
+                Description = "10 Month",
+                GlCode = "",
+                StandardHours = 80,
+                PayFrequencyFactor = 1950,
+                LagValue = "0"
+            };
+
+            return View(payFreq);
         }
 
     }
