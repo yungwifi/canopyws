@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using canopyws.Models;
 using System.Net.Http;
+using Newtonsoft.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -42,7 +43,17 @@ namespace canopyws.Controllers
 
             //formatting the post request to a string. I think this would need to be JSON actually but Im not sure how to do that. 
 
-            var responseString = await response.Content.ReadAsStringAsync();
+            var response = await response.Content.ReadAsJSONAsync();
+
+            //Storing the access_token in a variable and creating a new Login Access Token
+
+            var newToken = response.[data].access_token;
+
+            var token = new LoginModel()
+            {
+                access_token = newToken;
+            }
+        
         }
 
     }

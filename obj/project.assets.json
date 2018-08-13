@@ -12270,6 +12270,7 @@
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.Extensions.Configuration.CommandLine >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
+      "Newtonsoft.Json >= 11.0.2",
       "React.AspNet >= 3.4.0"
     ]
   },
@@ -12330,6 +12331,10 @@
           "Microsoft.Extensions.Configuration.CommandLine": {
             "target": "Package",
             "version": "2.1.1"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "11.0.2"
           }
         },
         "imports": [
