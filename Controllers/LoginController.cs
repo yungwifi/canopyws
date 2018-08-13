@@ -14,7 +14,7 @@ namespace canopyws.Controllers
     [Route("api/auth")]
     public class LoginController : Controller
     {
-        private static readonly HttpClient client = new HttpClient();
+        static HttpClient client = new HttpClient();
 
         // POST api
         //Making a post with the parameters to login to the API Dont know what to do with the bearer token or where to put it 
@@ -43,16 +43,14 @@ namespace canopyws.Controllers
 
             //formatting the post request to a string. I think this would need to be JSON actually but Im not sure how to do that. 
 
-            var response = await response.Content.ReadAsJSONAsync();
+            var responseString = await response.Content.ReadAsStringAsync();
 
             //Storing the access_token in a variable and creating a new Login Access Token
 
-            var newToken = response.[data].access_token;
+            var obj = JObject.Parse(responseString);
 
-            var token = new LoginModel()
-            {
-                access_token = newToken;
-            }
+            var oauthToken = (string)obj["access_token"];
+            var serviceUrl = (string)obj["instance_url"];
         
         }
 

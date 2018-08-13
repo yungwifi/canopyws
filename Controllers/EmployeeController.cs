@@ -15,7 +15,7 @@ namespace canopyws.Controllers
     {
         //I think this is how you set up a client to make HTTP requests?
 
-        private static readonly HttpClient client = new HttpClient();
+        static HttpClient client = new HttpClient();
        
 
         // GET: api/employee
@@ -38,9 +38,14 @@ namespace canopyws.Controllers
         //search functionality and the click ID for the specific employee in the list 
 
         [HttpGet("employee-number/{employee-number}")]
-        public async void Get([FromBody]string value)
+        public async Dictionary<string, string> Get([FromBody]Dictionary value)
         {
             var responseString = await client.GetStringAsync("https://api.webhris.com/v1/company/236/exports");
+
+            var obj = JObject.Parse(responseString);
+
+            var employee = (string)obj["employeeUserId"];
+            return employee; 
         }
 
         // GET api/values/5
