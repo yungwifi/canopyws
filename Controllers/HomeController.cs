@@ -10,6 +10,8 @@ namespace canopyws.Controllers
 {
     public class HomeController : Controller
     {
+        //I mainly hung on to this just to have a general Idea of a stock controller that is genertated when creating a .net app
+        //also to have an example of the "using" statements 
         public IActionResult Index()
         {
             return View();
