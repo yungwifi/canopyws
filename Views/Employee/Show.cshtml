@@ -4,11 +4,10 @@
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
-<p>Your Employees</p>
+<p>Individual Employee</p>
 <ul>
-    <li><a href="/api/v1/company/236/exports/employee-number/{@Model.employeeUserId}"> Name: @Model.personalFirstName </a> </li>
+    <li>First Name: @Model.personalFirstName</li>
     <li>Last Name: @Model.personalLastName</li>
     <li>Employee ID: @Model.employeeUserId</li>
 </ul>
-
 

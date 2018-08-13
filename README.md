@@ -23,10 +23,6 @@ My front end needs to be styled more. I had hopes of being able to use React but
 2. ASP.NET 
 3. Postman 
 
-# Links 
-1. https://frozen-waters-14026.herokuapp.com/ - App on Heroku
-2. https://trello.com/b/FeHxlHtK/streams-clone - User Stories 
-
 # Resources 
 1. Microsoft Docs 
 2. Stackoverflow 

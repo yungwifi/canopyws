@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\Employee\Index.cshtml" />
-    <None Include="Views\Employee\Employee.cshtml" />
+    <None Include="Views\Employee\Show.cshtml" />
     <None Include="Views\PayFrequencies\Index.cshtml" />
     <None Include="Views\PayFrequencies\Show.cshtml" />
   </ItemGroup>
