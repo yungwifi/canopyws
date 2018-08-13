@@ -21,7 +21,6 @@
     <Compile Remove="Controllers\NewHttpClientInstancePerRequestController.cs" />
     <Compile Remove="Models\EmployeeModel.cs" />
     <Compile Remove="Views\Test\Index.cshtml" />
-    <Compile Remove="Controllers\LoginController.cs" />
     <Compile Remove="Controllers\CompanyController.cs" />
     <Compile Remove="Controllers\TestController.cs" />
   </ItemGroup>
