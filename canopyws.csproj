@@ -23,6 +23,7 @@
     <Compile Remove="Views\Test\Index.cshtml" />
     <Compile Remove="Controllers\CompanyController.cs" />
     <Compile Remove="Controllers\TestController.cs" />
+    <Compile Remove="Controllers\HttpClientController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Login\Index.cshtml" />

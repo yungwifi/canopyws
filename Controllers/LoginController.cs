@@ -13,9 +13,16 @@ namespace canopyws.Controllers
     [Route("api/[controller]")]
     public class LoginController : Controller
     {
+        private static readonly HttpClient httpClient;
+
+        static LoginController()
+        {
+            httpClient = new HttpClient();
+        }
+
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public async void Post([FromBody]string value)
         {
             var values = new Dictionary<string, string>
                 {
@@ -26,9 +33,9 @@ namespace canopyws.Controllers
 
             var content = new FormUrlEncodedContent(values);
 
-            var response = await client.PostAsync("https://api.webhris.com/auth/token/", content);
+            var response = await HttpClient.PostAsync("https://api.webhris.com/auth/token/", content);
 
-            var async; responseString = await response.Content.ReadAsStringAsync();
+            var responseString = await response.Content.ReadAsStringAsync();
         }
 
     }
