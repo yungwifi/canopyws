@@ -14,11 +14,13 @@ namespace canopyws.Controllers
     public class EmployeeController : Controller
     {
         //I think this is how you set up a client to make HTTP requests?
+
         private static readonly HttpClient client = new HttpClient();
        
 
         // GET: api/employee
         //Just creating an employee to have data to show on the front end
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -34,6 +36,7 @@ namespace canopyws.Controllers
         //Using an HTTP client to make a get request to the API 
         //Set up a get reutest with a parameter looking for the employee number. Hoping to use this later for the 
         //search functionality and the click ID for the specific employee in the list 
+
         [HttpGet("employee-number/{employee-number}")]
         public async void Get([FromBody]string value)
         {
@@ -42,6 +45,7 @@ namespace canopyws.Controllers
 
         // GET api/values/5
         //Set up a get reutest with a parameter looking for the ssn. Hoping to use this later for the search functionality 
+
         [HttpGet("ssn/{ssn}")]
         public IEnumerable<string> Get(int ssn)
         {

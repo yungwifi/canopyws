@@ -22,6 +22,9 @@ My front end needs to be styled more. I had hopes of being able to use React but
 1. C#
 2. ASP.NET 
 3. Postman 
+4. HttpClient 
+5. NuGet
+
 
 # Resources 
 1. Microsoft Docs 

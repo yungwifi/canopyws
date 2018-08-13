@@ -13,6 +13,8 @@ namespace canopyws.Controllers
     public class PayFrequenciesController : Controller
     {
         // GET: All api/pay-frequencies
+        //creating a pay frequency object just for front end purposes. 
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -29,6 +31,8 @@ namespace canopyws.Controllers
         }
 
         // GET One api/pay-frequencies
+        //set this get request up in hopes to be able to use it for the search functionality in the future also 
+
         [HttpGet("{frequenciesId}")]
         public IActionResult Show()
         {
