@@ -10,17 +10,13 @@ using System.Net.Http;
 
 namespace canopyws.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/auth")]
     public class LoginController : Controller
     {
-        private static readonly HttpClient httpClient;
+        private static readonly HttpClient client = new HttpClient();
 
-        static LoginController()
-        {
-            httpClient = new HttpClient();
-        }
-
-        // POST api/values
+        // POST api
+        //Making a post with the parameters to login to the API Dont know what to do with the bearer token or where to put it 
         [HttpPost]
         public async void Post([FromBody]string value)
         {
@@ -33,7 +29,7 @@ namespace canopyws.Controllers
 
             var content = new FormUrlEncodedContent(values);
 
-            var response = await HttpClient.PostAsync("https://api.webhris.com/auth/token/", content);
+            var response = await client.PostAsync("https://api.webhris.com/auth/token/", content);
 
             var responseString = await response.Content.ReadAsStringAsync();
         }
